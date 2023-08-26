@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.titulo {
+    font-family: cursive;
+    color: #3498db;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 5px 5px 10px white;
+}
+
+.link {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.link a {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link a:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos para el video de fondo */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para el icono de WhatsApp */
+.wasa {
+    width: 40px;
+    margin-top: 450px;
+    margin-left: 940px;
+}
+
+/* Estilos para el título */
+.rr {
+    font-size: 2.0em;
+    color: #3498db;
+    font-family: cursive;
+    margin-left: 750px;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    .link {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .link a {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .wasa {
+        width: 30px;
+        margin: 10px auto;
+    }
+
+    .rr {
+        font-size: 1.5em;
+        margin-left: 0;
+    }
+}
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    z-index: 9999;
+    box-shadow: 15px 15px 15px #3498db;
+}
+
+/* Estilos para el texto del alert */
+.custom-alert p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
