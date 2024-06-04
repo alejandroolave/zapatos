@@ -9,3 +9,12 @@ window.onload = function() {
         alertDiv.style.display = "none";
     }, 5000); // El alert desaparecerá después de 5 segundos (5000 ms)
 }
+
+
+
+
+
+
+
+
+

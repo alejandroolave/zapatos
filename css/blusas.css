@@ -1,11 +1,112 @@
 .cuadros{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 40px;
 }
-.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8{
+.cuadros .c1, .cuadros .c2, .cuadros .c3, .cuadros .c4 {
     width: 200px;
     height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
 }
+.cuadros img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.cuadros img:hover {
+    transform: scale(1.1);
+}
+.buy-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+}
+.c1:hover .buy-button, .c2:hover .buy-button, .c3:hover .buy-button, .c4:hover .buy-button {
+    display: block;
+}
+.buy-button a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.buy-button a:hover {
+    background-color: #0056b3;
+}
+.full-screen-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+.full-screen-view img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+}
+.titulop {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 17, 255, 0.434);
+    margin-bottom: 20px;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espacio entre el botón y los cuadros */
+}
+
+button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Quitamos el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiamos el cursor a una mano al pasar el mouse */
+    transition: background-color 0.4s; /* Transición suave para el cambio de color */
+    font-family: Arial, sans-serif; /* Familia de fuentes */
+    font-weight: bold; /* Texto en negrita */
+}
+
+button a {
+    color: inherit; /* Hereda el color del botón */
+    text-decoration: none; /* Quitamos la subrayado del texto */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo azul más oscuro en hover */
+}
+
+
+
+
+
+
