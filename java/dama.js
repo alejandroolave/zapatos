@@ -1,7 +1,7 @@
 window.onload = function() {
     var alertDiv = document.createElement("div");
     alertDiv.className = "custom-alert";
-    alertDiv.innerHTML = "<p>¡Bienvenido al Mundo del Tenis!</p>";
+    alertDiv.innerHTML = "<p>¡Bienvenido al Carla_store!</p>";
 
     document.body.appendChild(alertDiv);
 

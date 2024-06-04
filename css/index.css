@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(../img/logoprincipal.jpg);
 }
 
 .titulo {
     font-family: cursive;
-    color: #3498db;
+    color: #db3434;
     font-size: 50px;
     font-weight: bold;
     padding: 20px;
@@ -28,15 +27,15 @@ body {
     margin: 10px;
     padding: 10px 20px;
     text-align: center;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #db343494;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .link a:hover {
-    background-color: #2980b9;
+    background-color: #ffffff;
 }
 
 /* Estilos para el video de fondo */

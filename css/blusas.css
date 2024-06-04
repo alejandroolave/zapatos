@@ -1,0 +1,11 @@
+.cuadros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.m1,.m2,.m3,.m4,.m5,.m6,.m7,.m8{
+    width: 200px;
+    height: 200px;
+}
